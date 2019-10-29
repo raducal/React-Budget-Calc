@@ -1,22 +1,84 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+  max-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  background: #555;
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 70%;
+  margin: 4rem auto;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(rgba(109, 70, 70, 0.8), rgba(201, 112, 112, 0.8));
 }
 
-.App-link {
-  color: #09d3ac;
+.forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5rem;
+}
+
+.expense {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  font-size: 0.9rem;
+}
+
+.expenses {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 30px;
+}
+
+.form input {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn {
+  padding: 5px 10px;
+  width: 50%;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.clear-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 10px;
 }
